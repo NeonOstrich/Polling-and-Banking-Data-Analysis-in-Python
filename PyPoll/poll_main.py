@@ -7,7 +7,7 @@ csvpath = os.path.join("Resources", "election_data.csv")
 total_votes = 0
 candidate_list = []
 candidate_dictionary = {}
-
+percentage_dice = {}
 
 # Open the CSV
 with open(csvpath) as csvfile:
@@ -27,14 +27,23 @@ with open(csvpath) as csvfile:
 
         candidate_dictionary[candidate_name] +=1
 
-    percentage_dict = {key: value / total_votes for key, value in candidate_dictionary.items()}
-    perc_dict = (percentage_dict.items * 100)
-    #max_dict = max(candidate_dictionary.items())
+    percentage_dict = {key: round((value / total_votes)*100,2) for key, value in candidate_dictionary.items()}
 
-    print(f"Election Results")
-    print(f"-------------------------")
-    print(f"Total Votes: {total_votes}")
-    print(f"{candidate_list}")
-    print(f"Total votes by candidate {candidate_dictionary}")
-    print(f"Percentage votes by candidate {percentage_dict}")
-    #print(f"The winner is {max_dict}")
+    max_dict = max(candidate_dictionary, key=candidate_dictionary.get)
+    
+    
+
+    output = (f"Election Results\n"
+    f"-------------------------\n"
+        f"Total Votes: {total_votes}\n"
+        f"The candidates running are {candidate_list}\n"
+        f"Total votes by candidate {candidate_dictionary}\n"
+        f"Percentage votes by candidate {(percentage_dict)}\n"
+        f"The winner is {max_dict}")
+
+print(output)
+
+output_path = os.path.join("analysis", "financial_analysis.txt")
+
+with open(output_path, "w") as output_text:
+    output_text.write(output)
