@@ -18,7 +18,7 @@ with open(csvpath) as csvfile:
     # Loop through updating variable values
     for row in csvreader:
 
-        total_votes = total_votes +1
+        total_votes += 1
 
         candidate_name = row[2]
         if candidate_name not in candidate_list:
@@ -28,9 +28,13 @@ with open(csvpath) as csvfile:
         candidate_dictionary[candidate_name] +=1
 
     percentage_dict = {key: value / total_votes for key, value in candidate_dictionary.items()}
+    perc_dict = (percentage_dict.items * 100)
+    #max_dict = max(candidate_dictionary.items())
 
-
+    print(f"Election Results")
+    print(f"-------------------------")
     print(f"Total Votes: {total_votes}")
     print(f"{candidate_list}")
-    print(f"Average Change: {candidate_dictionary}")
-    print(percentage_dict)
+    print(f"Total votes by candidate {candidate_dictionary}")
+    print(f"Percentage votes by candidate {percentage_dict}")
+    #print(f"The winner is {max_dict}")
