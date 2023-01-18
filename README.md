@@ -15,8 +15,13 @@ which holds data in two columns: "Date" and "Profit/Losses".
 ## Organization
 
 Within PyBank and PyPoll you will find the Python code for my analysis as well as an "analysis" and a "Resources" file.
-
 The "Resources" file contains the csv file that is analyzed, and the "analysis" file contains a text output of the analysis.
+
+PyBank offers an analysis of the budget data provided, which can be used to judge the companies performance over the period of
+time measured, and provide valuable insights to potential investors as well as organizational leadership.
+
+PyPoll provides an analysis of the election results for a town, which can be used to judge the comparative success of each candidate.
+This analysis can be a roadmap for voters and campaign contributors who are looking to maximize their impact as well as the candidates themselves.
 
 ## PyBank 
 
