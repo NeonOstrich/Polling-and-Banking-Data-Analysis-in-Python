@@ -6,7 +6,7 @@ This is an assignment that I completed for the George Washington University Data
 ## Background
 
 In this project, I am performing two analyses called PyPoll and PyBank.
-budget_data.csv and election_data.csv. PyPoll consists analyzing polling data for a small town. It focuses on the dataset, election_data.csv, 
+PyPoll consists analyzing polling data for a small town. It focuses on the dataset, election_data.csv, 
 which holds data in in three columns: "Voter ID", "County", and "Candidate".
 
 PyBank consists of analyzing financial data for a company. It focuses on the dataset, budget_data.csv,
