@@ -2,7 +2,6 @@ import os
 import csv
 
 # Set path for file
-csvpath = os.path.join("Resources", "election_data.csv")
 
 total_votes = 0
 candidate_list = []
@@ -10,7 +9,7 @@ candidate_dictionary = {}
 percentage_dice = {}
 
 # Open the CSV
-with open(csvpath) as csvfile:
+with open("/Users/oliverzagorin/Desktop/GW_Bootcamp/Homework/python-challenge/PyPoll/Resources/election_data.csv") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     
     header = next(csvreader)
@@ -43,7 +42,6 @@ with open(csvpath) as csvfile:
 
 print(output)
 
-output_path = os.path.join("analysis", "financial_analysis.txt")
 
-with open(output_path, "w") as output_text:
+with open("/Users/oliverzagorin/Desktop/GW_Bootcamp/Homework/python-challenge/PyPoll/analysis/financial_analysis.txt", "w") as output_text:
     output_text.write(output)

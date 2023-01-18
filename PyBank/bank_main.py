@@ -1,8 +1,6 @@
 import os
 import csv
 
-# Set path for file
-csvpath = os.path.join("Resources", "budget_data.csv")
 
 total_months = 0
 total_pc = 0
@@ -13,7 +11,7 @@ greatest_decrease = 100000000000000
 decrease_date = 0
 
 # Open the CSV
-with open(csvpath) as csvfile:
+with open("/Users/oliverzagorin/Desktop/GW_Bootcamp/Homework/python-challenge/PyBank/Resources/budget_data.csv") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     header = next(csvreader)
 
@@ -46,7 +44,7 @@ f"Greatest Decrease in Profits: {decrease_date} (${greatest_decrease})")
 
 print(output)
 
-output_path = os.path.join("analysis", "financial_analysis.txt")
 
-with open(output_path, "w") as output_text:
+
+with open("/Users/oliverzagorin/Desktop/GW_Bootcamp/Homework/python-challenge/PyBank/analysis/financial_analysis.txt", "w") as output_text:
     output_text.write(output)
