@@ -1,5 +1,4 @@
-# python-challenge
-# Unit 3 Homework: Python
+#Polling and Banking Data Analysis in Python
 
 This is an assignment that I completed for the George Washington University Data Analytics Bootcamp, focused on analysis in Python.
 
