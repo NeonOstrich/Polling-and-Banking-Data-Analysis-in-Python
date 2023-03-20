@@ -35,6 +35,7 @@ My Python script analyzes budget_data.csv to calculate each of the following:
 * The greatest increase in profits (date and amount) over the entire period
 
 * The greatest decrease in profits (date and amount) over the entire period
+<img width="647" alt="Screen Shot 2023-03-19 at 9 12 58 PM" src="https://user-images.githubusercontent.com/119632669/226224025-e8e4fcd4-a099-4e98-ab8c-3b0b85e5f66f.png">
 
 ## PyPoll 
 
@@ -49,3 +50,4 @@ My Python script analyzes election_data.csv to calculate each of the following:
 * The total number of votes each candidate won
 
 * The winner of the election based on popular vote.
+<img width="787" alt="Screen Shot 2023-03-19 at 9 13 40 PM" src="https://user-images.githubusercontent.com/119632669/226224030-9c3beacc-0d21-4aa8-ad10-55518420c7f7.png">
